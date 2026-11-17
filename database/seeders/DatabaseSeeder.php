@@ -11,7 +11,7 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        User::FirsOrCreate(
+        User::FirstOrCreate(
             ['email' =>env('ADMIN_EMAIL', 'admin@petcare.com')],
             [
                 'name'     =>env('ADMIN_NAME', 'Administrador'),
